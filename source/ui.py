@@ -99,7 +99,7 @@ def get_models(model_dir):
 
     for model in models:
         lower_name = model.lower()
-        model_path = os.path.join(model_dir, model, "transformers/default/1", model)
+        model_path = os.path.join(model_dir, lower_name, "transformers/default/1", model)
         if 's1' in lower_name:
             stage1_models.append(model_path)
         if 's2' in lower_name:
@@ -557,8 +557,8 @@ class AppMain:
         stage1_choices = stage1_choices + both_choices
         stage2_choices = stage2_choices + both_choices
 
-        default_stage1_model = os.path.join(self._model_dir, AppMain.DefaultStage1Model, "transformers/default/1", AppMain.DefaultStage1Model)
-        default_stage2_model = os.path.join(self._model_dir, AppMain.DefaultStage2Model, "transformers/default/1", AppMain.DefaultStage1Model)
+        default_stage1_model = os.path.join(self._model_dir, AppMain.DefaultStage1Model.lower(), "transformers/default/1", AppMain.DefaultStage1Model)
+        default_stage2_model = os.path.join(self._model_dir, AppMain.DefaultStage2Model.lower(), "transformers/default/1", AppMain.DefaultStage1Model)
 
         with gr.Accordion(label="Model"):
             self._stage1_model = self.S("stage1_model", gr.Dropdown(
