@@ -45,8 +45,10 @@ pip install -r requirements.txt
 ## Running
 Place your stage 1 & 2 model folders in the YuE exl2 `models/` folder.\
 E.g.\
-`models/YuE-s1-7B-anneal-en-cot-exl2/`\
-`models/YuE-s2-1B-general-exl2/`
+<!-- `models/YuE-s1-7B-anneal-en-cot-exl2/`\
+`models/YuE-s2-1B-general-exl2/` -->
+`/kaggle/input/YuE-s1-7B-anneal-en-cot-exl2/`\
+`/kaggle/input/YuE-s2-1B-general-exl2/`
 
 Windows:\
 Run `start_windows.bat` to start the gradio server
