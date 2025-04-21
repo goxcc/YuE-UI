@@ -21,7 +21,7 @@ from yue.models.soundstream_hubert_new import SoundStream
 @dataclass
 class Stage1Config:
     # model_path: str = "models/YuE-s1-7B-anneal-en-cot-exl2"
-    model_path: str = "/kaggle/input/yue-s1-7b-anneal-en-cot-exl2/transformers/default/1/YuE-s1-7B-anneal-en-cot-exl2".lower()
+    model_path: str = "/kaggle/input/yue-s1-7b-anneal-en-cot-exl2/transformers/default/1/YuE-s1-7B-anneal-en-cot-exl2"
     basic_model_config: str = "./xcodec_mini_infer/final_ckpt/config.yaml"
     resume_path: str = "./xcodec_mini_infer/final_ckpt/ckpt_00360000.pth"
     cache_size: int = 6000
@@ -30,7 +30,7 @@ class Stage1Config:
 @dataclass
 class Stage2Config:
     # model_path: str = "models/YuE-s2-1B-general-exl2"
-    model_path: str = "/kaggle/input/yue-s2-1b-general-exl2/transformers/default/1/YuE-s2-1B-general-exl2".lower()
+    model_path: str = "/kaggle/input/yue-s2-1b-general-exl2/transformers/default/1/YuE-s2-1B-general-exl2"
     cache_size: int = 7500
     cache_mode: str = "FP16"
 
