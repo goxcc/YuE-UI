@@ -164,7 +164,8 @@ class AppMain:
         self._allowed_paths = [os.path.abspath(os.path.join(self._working_directory, path)) for path in AppMain.AllowedPaths]
         
         self._output_dir = os.path.join(self._working_directory, "outputs")
-        self._model_dir = os.path.join(self._working_directory, "models")
+        # self._model_dir = os.path.join(self._working_directory, "models")
+        self._model_dir = "/kaggle/input/"
 
         gr.set_static_paths(paths=["icons", "scripts"])
 
